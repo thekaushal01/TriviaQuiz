@@ -45,7 +45,6 @@ body {
 }
 
 #result-container {
-  display: none;
   margin-top: 20px;
 }
 
@@ -63,7 +62,6 @@ body {
 }
 
 #final-score {
-  display: none;
   margin-top: 20px;
 }
 
