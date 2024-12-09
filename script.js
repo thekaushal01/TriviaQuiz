@@ -2,7 +2,7 @@ const questions = [
   {
     question: "What is the name of the tallest grass?",
     options: ["Lawn grass", "Giant Bamboo", "Scutch grass", "Pampas grass"],
-    correct Answer: 2
+    correctAnswer: 2
   },
   {
     question: "What is the most abundant element on earth?",
@@ -63,7 +63,7 @@ function showFinalScore() {
   document.getElementById('score').textContent = `${score} / ${questions.length}`;
 }
 
-function restart Quiz() {
+function restartQuiz() {
   currentQuestionIndex = 0;
   score = 0;
   //document.get Element By Id('quiz-container').style.display = 'block';
