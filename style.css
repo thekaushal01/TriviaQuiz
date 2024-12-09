@@ -45,12 +45,13 @@ body {
 }
 
 #result-container {
+  display: none;
   margin-top: 20px;
 }
 
 #next-button {
   background-color: #008CBA;
-  color: black;
+  color: white;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
@@ -62,12 +63,13 @@ body {
 }
 
 #final-score {
+  display: none;
   margin-top: 20px;
 }
 
 #final-score button {
   background-color: #f44336;
-  color: black;
+  color: white;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
