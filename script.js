@@ -1,3 +1,4 @@
+// script.js
 const questions = [
   {
     question: "What is the name of the tallest grass?",
@@ -38,8 +39,8 @@ function loadNextQuestion() {
     buttons[index].textContent = option;
   });
 
-  //document.getElementById('result-container').style.display = 'none';
-  //document.getElementById('next-button').style.display = 'none';
+  document.getElementById('result-container').style.display = 'none';
+  document.getElementById('next-button').style.display = 'none';
 }
 
 function checkAnswer(selectedIndex) {
@@ -52,22 +53,21 @@ function checkAnswer(selectedIndex) {
     document.getElementById('result').textContent = "Wrong!";
   }
 
-  //document.getElementById('result-container').style.display = 'block';
-  //document.getElementById('next-button').style.display = 'inline-block';
+  document.getElementById('result-container').style.display = 'block';
+  document.getElementById('next-button').style.display = 'inline-block';
   currentQuestionIndex++;
 }
 
 function showFinalScore() {
-  //document.getElementById('quiz-container').style.display = 'none';
-  //document.getElementById('final-score').style.display = 'block';
+  document.getElementById('final-score').style.display = 'block';
   document.getElementById('score').textContent = `${score} / ${questions.length}`;
 }
 
 function restartQuiz() {
   currentQuestionIndex = 0;
   score = 0;
-  //document.get Element By Id('quiz-container').style.display = 'block';
-  //document.getElementById('final-score').style.display = 'none';
+  document.getElementById('quiz-container').style.display = 'block';
+  document.getElementById('final-score').style.display = 'none';
   loadNextQuestion();
 }
 
